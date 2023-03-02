@@ -39,4 +39,44 @@ public class PalindromeTest {
         boolean expected = true;
         Assert.assertEquals( expected, p.pal(input));
     }
+
+    /**
+     * "saippuakivikauppias" is a palindrome, so return true.
+     */
+    @Test
+    public void palindromeTest4(){
+        String input = "saippuakivikauppias";
+        boolean expected = true;
+        Assert.assertEquals( expected, p.pal(input));
+    }
+
+    /**
+     * "saippuakivikauppiasL" isn't a palindrome, so return false.
+     */
+    @Test
+    public void palindromeTest5(){
+        String input = "saippuakivikauppiasL";
+        boolean expected = false;
+        Assert.assertEquals( expected, p.pal(input));
+    }
+
+    /**
+     * "a" is a palindrome, so return true.
+     */
+    @Test
+    public void palindromeTest6(){
+        String input = "a";
+        boolean expected = true;
+        Assert.assertEquals( expected, p.pal(input));
+    }
+
+    /**
+     * "" or an empty string is a palindrome, so return true.
+     */
+    @Test
+    public void palindromeTest7(){
+        String input = "";
+        boolean expected = true;
+        Assert.assertEquals( expected, p.pal(input));
+    }
 }
